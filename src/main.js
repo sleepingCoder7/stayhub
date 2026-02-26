@@ -110,4 +110,11 @@ const hotels = [
       closeModal();
     });
 
+    // Expose functions globally for inline HTML event handlers
+    window.renderHotels = renderHotels;
+    window.setFilter = setFilter;
+    window.filterHotels = filterHotels;
+    window.openModal = openModal;
+    window.closeModal = closeModal;
+
     renderHotels();
